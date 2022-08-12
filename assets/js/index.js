@@ -30,7 +30,7 @@ function initialLoader() {
   let toInput = (document.querySelector("#hastaInput").value = "");
   for (const propiedad of propiedadesJSON) {
     sectionCard.innerHTML += `<div class="propiedad"><div class="img" style="background-image: url('${propiedad.src}')"></div><section><h5 >${propiedad.name}</h5>
-                            <div class="d-flex justify-content-between"><p>${propiedad.rooms}</p><p>${propiedad.m}</p></div><p class="my-3">${propiedad.description}</p>
+                            <div class="d-flex justify-content-between"><p>Cuartos: ${propiedad.rooms}</p><p>Metros: ${propiedad.m}</p></div><p class="my-3">${propiedad.description}</p>
                             <button class="btn btn-info ">Ver más</button></section></div>`;
   }
   setCounter(propiedadesJSON.length);
