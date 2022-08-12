@@ -25,9 +25,9 @@ function setCounter(params){
 
 function initialLoader() {
   sectionCard.innerHTML = "";
-  let roomInput = (document.querySelector("#cuartosInput").value = "");
-  let fromInput = (document.querySelector("#desdeInput").value = "");
-  let toInput = (document.querySelector("#hastaInput").value = "");
+  document.querySelector("#cuartosInput").value = "";
+  document.querySelector("#desdeInput").value = "";
+  document.querySelector("#hastaInput").value = "";
   for (const propiedad of propiedadesJSON) {
     sectionCard.innerHTML += `<div class="propiedad"><div class="img" style="background-image: url('${propiedad.src}')"></div><section><h5 >${propiedad.name}</h5>
                             <div class="d-flex justify-content-between"><p>Cuartos: ${propiedad.rooms}</p><p>Metros: ${propiedad.m}</p></div><p class="my-3">${propiedad.description}</p>
